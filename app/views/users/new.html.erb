@@ -17,14 +17,14 @@
         </div>
         <div class="mb-3">
             <%= f.label :password, class:"form-label" %>
-            <%= f.text_field :password, class:'form-control' %>
+            <%= f.password_field :password, class:'form-control' %>
             <% @user.errors.full_messages_for(:password).each do |msg| %>
                 <div class="text-danger fw-light"><%= msg %></div>
             <% end %>
         </div>
         <div class="mb-3">
             <%= f.label :password_confirmation, class:"form-label" %>
-            <%= f.text_field :password_confirmation, class:'form-control' %>
+            <%= f.password_field :password_confirmation, class:'form-control' %>
             <% @user.errors.full_messages_for(:password_confrimation).each do |msg| %>
                 <div class="text-danger fw-light"><%= msg %></div>
             <% end %>
