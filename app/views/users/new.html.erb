@@ -1,4 +1,4 @@
-<div class="container">
+<div class="">
     <h1 class="my-4 text-capitalize"> Signup as a new member</h1>
     <%= form_with model: @user, local:true do |f| %>
         <div class="mb-3">
@@ -29,6 +29,6 @@
                 <div class="text-danger fw-light"><%= msg %></div>
             <% end %>
         </div>
-        <div class="mb-3 d-flex justify-content-between align-items-center"><%= f.submit class:'btn btn-primary' %> <%= link_to 'login instead', posts_path, class:'link text-decoration-none' %></div>
+        <div class="mb-3 d-flex justify-content-between align-items-center"><%= f.submit class:'btn btn-primary' %> <%= link_to 'login instead', login_path, class:'link text-decoration-none' %></div>
     <% end %>
 </div>
