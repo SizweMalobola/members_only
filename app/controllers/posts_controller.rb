@@ -26,6 +26,6 @@ class PostsController < ApplicationController
 
     private
     def post_params
-        params.require(:post).premit(:title,:body)
+        params.require(:post).permit(:title,:body)
     end
 end
