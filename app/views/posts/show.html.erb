@@ -1,2 +1,7 @@
-<h1><%= @post.title %></h1>
+<article class="blog-post mt-4">
+    <h2 class="blog-post-title"><%= @post.title.capitalize %></h2>
+    <p class="blog-post-meta text-muted">
+        <%= @post.created_at.to_date %> by <%= logged_in? ? User.find(@post[:user_id]).name.capitalize : 'Anonymous'%>
+    </p>
+</article>
 <%= @post.body %>
