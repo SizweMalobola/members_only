@@ -1,1 +1,15 @@
-<h1>Posts</h1>
+<table class="table table-hover caption-top mt-4">
+    <caption>List Of Posts</caption>
+    <thead class="">
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Views</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= render @posts %>
+    </tbody>
+</table>
+
+ <%= javascript_pack_tag 'post' %>

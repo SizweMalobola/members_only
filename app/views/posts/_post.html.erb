@@ -1,0 +1,5 @@
+<tr data-link="<%= post_path(post) %>" >
+    <th scope="row"><%= post.title.capitalize %></th>
+    <td><%= logged_in? ? User.find(post[:user_id]).name.capitalize : 'Anonymous'%></td>
+    <td class>0</td>
+</tr>
