@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
     private
     def post_params
-        params.require(:post).permit(:title,:body)
+        params.require(:post).permit(:title,:body).merge(user_id: session[:user_id])
     end
 
     # confirms a logged-in user.
